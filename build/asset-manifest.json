@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e40d07ed.css",
+    "main.js": "/static/js/main.f3007ed7.js",
+    "static/media/logo.svg": "/static/media/logo.9ada447a1da3620ab8001ec1582f4218.svg",
+    "static/media/head-top.png": "/static/media/head-top.536d9e9868cd35a3bb78.png",
+    "static/media/head-eye.png": "/static/media/head-eye.149ab9615bcd677a5972.png",
+    "static/media/head-top-sm.png": "/static/media/head-top-sm.4fc98128958631d4fabf.png",
+    "static/media/head-eye-sm.png": "/static/media/head-eye-sm.7c137d2c136da1d73661.png",
+    "static/media/FuturaPTLightOblique.otf": "/static/media/FuturaPTLightOblique.730652294df6fc97b7e5.otf",
+    "static/media/FuturaPTBold.otf": "/static/media/FuturaPTBold.b22b8109a56a2445c366.otf",
+    "static/media/FuturaPTMediumOblique.otf": "/static/media/FuturaPTMediumOblique.8c176828dcf86ea79c27.otf",
+    "static/media/FuturaPTBoldOblique.otf": "/static/media/FuturaPTBoldOblique.6f93cde76fbac14ccace.otf",
+    "static/media/FuturaPTMedium.otf": "/static/media/FuturaPTMedium.7af6976ce738bec1704e.otf",
+    "static/media/FuturaPTLight.otf": "/static/media/FuturaPTLight.725c77b4e125ed776783.otf",
+    "static/media/rect-03.svg": "/static/media/rect-03.1517e896766c2094ccc1.svg",
+    "static/media/chart.png": "/static/media/chart.7dc85474dc79d2fd1d55.png",
+    "static/media/papersButton.svg": "/static/media/papersButton.e7511f3de0551c5ce29c8111d3d3e909.svg",
+    "static/media/papersButtonSm.svg": "/static/media/papersButtonSm.172b70148ec0adf5894c85afaf715d2f.svg",
+    "static/media/testNetButton.svg": "/static/media/testNetButton.c9a8505bb5827baf356831dec46dae34.svg",
+    "static/media/testNetButtonSm.svg": "/static/media/testNetButtonSm.e46fc446b390f322a108a09c2074a5e7.svg",
+    "static/media/pathButton.svg": "/static/media/pathButton.73dc8336f6bf042e3c7d49e7c0c6fe64.svg",
+    "static/media/logo-white.svg": "/static/media/logo-white.d42855daeeafd304fcfd2732fa3c2db1.svg",
+    "static/media/pathButtonSm.svg": "/static/media/pathButtonSm.c386e3cbeacfd9bc8a39b6e7f096e947.svg",
+    "index.html": "/index.html",
+    "static/media/rect-02.svg": "/static/media/rect-02.18bd4a45a136f840dd84.svg",
+    "static/media/rect-01-sm.svg": "/static/media/rect-01-sm.08e5101a3bdcc7a9fb5ecfbc53295daa.svg",
+    "static/media/rect-01.svg": "/static/media/rect-01.edf5425eca00e3de37c5.svg",
+    "main.e40d07ed.css.map": "/static/css/main.e40d07ed.css.map",
+    "main.f3007ed7.js.map": "/static/js/main.f3007ed7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e40d07ed.css",
+    "static/js/main.f3007ed7.js"
+  ]
+}

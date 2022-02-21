@@ -6,7 +6,7 @@ import CustomImage from "../CustomImage";
 
 const PapersButton: React.FC = () => {
   return (
-    <div className="cursor-pointer filter hover:blur transition-all duration-300">
+    <div className="cursor-pointer hover:blur transition-all duration-300">
       <CustomLink to="/paper">
         <div className="sm-max:hidden">
           <CustomImage src={image} alt="Papers" />

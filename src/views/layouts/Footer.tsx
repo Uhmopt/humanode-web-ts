@@ -1,15 +1,8 @@
 import { Close } from "@mui/icons-material";
 import { Box, Container, IconButton, Theme } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import React from "react";
 import TextButton from "views/components/buttons/TextButton";
 import CustomText from "views/components/CustomText";
-
-const useStyles: any = makeStyles({
-  root: {
-    backdropFilter: "blur(2px)",
-  },
-});
 
 interface Props {
   isDisplay?: boolean;
@@ -17,7 +10,6 @@ interface Props {
 }
 
 const Footer: React.FC<Props> = ({ isDisplay = false, title = "HOME" }) => {
-  const classes = useStyles();
   return (
     <div>
       {(isDisplay ?? false) && (
@@ -29,7 +21,7 @@ const Footer: React.FC<Props> = ({ isDisplay = false, title = "HOME" }) => {
                   {title}
                 </CustomText>
                 <TextButton to="/home">
-                  <IconButton size="small" className={classes?.root}>
+                  <IconButton size="small" className="backdrop-blur-sm">
                     <Close fontSize="large" />
                   </IconButton>
                 </TextButton>

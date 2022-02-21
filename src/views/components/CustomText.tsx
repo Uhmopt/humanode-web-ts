@@ -44,7 +44,7 @@ const CustomText: React.FC<Props> = ({
       {...props}
       component={span ? "span" : "div"}
       align={align}
-      className={`${shadow ? `filter drop-shadow` : ``}
+      className={`${shadow ? `drop-shadow` : ``}
       text-${props?.color ?? ""}
       ${className} `}
       fontWeight={bold ? "bold" : ""}

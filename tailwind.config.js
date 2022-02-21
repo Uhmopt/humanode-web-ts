@@ -1,6 +1,6 @@
 // tailwind.config.js
 module.exports = {
-  purge: ["./src/**/*.{js,ts,jsx,tsx}", ".src/components/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/views/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
@@ -59,16 +59,16 @@ module.exports = {
       body: ["'Futura PT'"],
     },
   },
-  variants: {
-    extend: {
-      borderWidth: ["hover", "focus"],
-      width: ["first"],
-      height: ["first"],
-      position: ["first"],
-    },
-    // mixBlendMode: ['hover', 'focus'],
-    blur: ["hover", "focus"],
-    // scale: ['active', 'group-hover'],
-    cursor: ["hover", "focus"],
-  },
+  // variants: {
+  //   extend: {
+  //     borderWidth: ["hover", "focus"],
+  //     width: ["first"],
+  //     height: ["first"],
+  //     position: ["first"],
+  //   },
+  //   // mixBlendMode: ['hover', 'focus'],
+  //   blur: ["hover", "focus"],
+  //   // scale: ['active', 'group-hover'],
+  //   cursor: ["hover", "focus"],
+  // },
 };

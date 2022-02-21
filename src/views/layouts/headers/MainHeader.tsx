@@ -7,7 +7,7 @@ import Logo from "views/components/Logo";
 const MainHeader: React.FC = () => {
   return (
     <div className="relative">
-      <div className="fixed w-screen pt-10 pb-8 backdrop-blur-sm z-10">
+      <div className="fixed w-screen py-10 backdrop-blur-sm z-10">
         <Container maxWidth="xl">
           <Grid container justifyContent="space-between" alignItems="center">
             <Grid

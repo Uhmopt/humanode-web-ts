@@ -5,7 +5,22 @@ interface Props {
   to?: string;
   target?: string;
   children?: ReactNode;
-  variant?: "button" | "caption" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "inherit" | "subtitle1" | "subtitle2" | "body1" | "body2" | "overline" | undefined;
+  variant?:
+    | "button"
+    | "caption"
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
+    | "h6"
+    | "inherit"
+    | "subtitle1"
+    | "subtitle2"
+    | "body1"
+    | "body2"
+    | "overline"
+    | undefined;
   color?: string;
   className?: string;
 }
@@ -42,5 +57,6 @@ const CustomLink: React.FC<Props> = ({
       {mainRender}
     </a>
   );
-}
-export default CustomLink
+};
+
+export default CustomLink;

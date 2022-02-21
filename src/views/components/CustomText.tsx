@@ -6,12 +6,28 @@ interface Props {
   children?: ReactNode;
   shadow?: boolean;
   component?: string;
-  align?: 'inherit' | 'left' | 'center' | 'right' | 'justify';
+  align?: "inherit" | "left" | "center" | "right" | "justify";
   bold?: boolean;
   span?: boolean;
   color?: string;
-  variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "subtitle1" | "subtitle2" | "body1" | "body2" | "caption" | "button" | "overline" | "inherit" | undefined;
+  variant?:
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
+    | "h6"
+    | "subtitle1"
+    | "subtitle2"
+    | "body1"
+    | "body2"
+    | "caption"
+    | "button"
+    | "overline"
+    | "inherit"
+    | undefined;
 }
+
 const CustomText: React.FC<Props> = ({
   className = "",
   children = "",
@@ -37,6 +53,6 @@ const CustomText: React.FC<Props> = ({
       {children}
     </Typography>
   );
-}
+};
 
 export default CustomText;

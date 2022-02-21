@@ -7,7 +7,13 @@ import TestNetButton from "views/components/buttons/TestNetButton";
 const HomeComponent: React.FC = () => {
   return (
     <div className="sm-max:absolute bottom-12 w-full">
-      <Grid container justifyContent="center" textAlign="center" alignItems="center" spacing={4} >
+      <Grid
+        container
+        justifyContent="center"
+        textAlign="center"
+        alignItems="center"
+        spacing={4}
+      >
         <Grid item>
           <PapersButton />
         </Grid>
@@ -20,5 +26,5 @@ const HomeComponent: React.FC = () => {
       </Grid>
     </div>
   );
-}
+};
 export default HomeComponent;

@@ -8,6 +8,6 @@ const BodyContainer: React.FC = ({ children = "" }) => {
       </div>
     </div>
   );
-}
+};
 
 export default BodyContainer;

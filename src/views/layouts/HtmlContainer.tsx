@@ -1,23 +1,27 @@
 import { ArrowBackIos } from "@mui/icons-material";
-import { Box, Container } from '@mui/material';
+import { Box, Container, Theme } from "@mui/material";
 import React, { ReactNode } from "react";
-import TextButton from 'views/components/buttons/TextButton';
+import TextButton from "views/components/buttons/TextButton";
+
 interface Props {
   children?: ReactNode;
   background?: string;
   showHome?: boolean;
 }
+
 const HtmlContainer: React.FC<Props> = ({
   children = "",
   background = "",
-  showHome = false
+  showHome = false,
 }) => {
   const [back, rect] = String(background ?? "head-top").split(" ");
   return (
-    <div className={`relative sm:bg-${rect} bg-center bg-fixed bg-no-repeat bg-120 sm:bg-185`}>
+    <div
+      className={`relative sm:bg-${rect} bg-center bg-fixed bg-no-repeat bg-120 sm:bg-185`}
+    >
       {(showHome ?? false) && (
         <Container maxWidth="xl" className="">
-          <Box sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+          <Box sx={{ zIndex: (theme: Theme) => theme.zIndex.drawer + 1 }}>
             <div className="fixed top-1/2 sm-max:hidden z-10">
               <TextButton
                 variant="h5"
@@ -43,6 +47,7 @@ const HtmlContainer: React.FC<Props> = ({
           transition-all duration-300
         `}
       >
+        {/* pre-render for populating classNames of tail-wind */}
         <div className="bg-head-top sm:bg-head-top sm-max:bg-head-top"></div>
         <div className="bg-head-top-sm sm:bg-head-top-sm sm-max:bg-head-top-sm"></div>
         <div className="bg-head-eye sm:bg-head-eye sm-max:bg-head-eye"></div>
@@ -55,6 +60,6 @@ const HtmlContainer: React.FC<Props> = ({
       </div>
     </div>
   );
-}
+};
 
 export default HtmlContainer;

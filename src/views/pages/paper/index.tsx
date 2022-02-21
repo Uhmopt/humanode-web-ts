@@ -2,8 +2,6 @@ import React from "react";
 import PaperComponent from "./PaperComponent";
 
 const Paper = () => {
-  return (
-    <PaperComponent />
-  );
-}
+  return <PaperComponent />;
+};
 export default Paper;

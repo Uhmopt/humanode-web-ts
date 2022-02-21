@@ -6,8 +6,10 @@ import * as serviceWorker from "./serviceWorker";
 import { darkTheme } from "./theme";
 
 ReactDOM.render(
-    <ThemeProvider theme={darkTheme}>
-        <App />
-    </ThemeProvider>,
-    document.getElementById("root"));
+  <ThemeProvider theme={darkTheme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById("root")
+);
+
 serviceWorker.unregister();

@@ -10,14 +10,13 @@ interface Props {
   maxWidth?: "xs" | "sm" | "md" | "lg" | "xl";
   background?: string;
 }
-const Layout: React.FC<Props> = ({
-  maxWidth = "md",
-}) => {
+
+const Layout: React.FC<Props> = ({ maxWidth = "md" }) => {
   const location = useLocation();
   const [crrState, setCrrState] = useState({
     background: "head-top",
     showHome: false,
-    title: "HOME"
+    title: "HOME",
   });
   const init: (path: string) => void = (path) => {
     switch (path) {
@@ -25,74 +24,83 @@ const Layout: React.FC<Props> = ({
         setCrrState((prev) => ({
           ...(prev ?? {}),
           background: "head-top",
-          showHome: false
-        }))
+          showHome: false,
+        }));
         break;
       case "/path":
         setCrrState((prev) => ({
           ...(prev ?? {}),
           background: "head-eye rect-03",
           showHome: true,
-          title: "PATH"
-        }))
+          title: "PATH",
+        }));
         break;
       case "/path/detail":
         setCrrState((prev) => ({
           ...(prev ?? {}),
           background: "head-eye rect-03",
           showHome: true,
-          title: "PATH IN DETAIL"
-        }))
+          title: "PATH IN DETAIL",
+        }));
         break;
       case "/paper":
         setCrrState((prev) => ({
           ...(prev ?? {}),
           background: "head-eye rect-01",
           showHome: true,
-          title: "PAPER"
-        }))
+          title: "PAPER",
+        }));
         break;
       case "/network":
         setCrrState((prev) => ({
           ...(prev ?? {}),
           background: "head-eye",
           showHome: true,
-          title: "NETWORK"
-        }))
+          title: "NETWORK",
+        }));
         break;
       case "/testnet":
         setCrrState((prev) => ({
           ...(prev ?? {}),
           background: "head-eye rect-03",
           showHome: true,
-          title: "Home"
-        }))
+          title: "Home",
+        }));
         break;
       case "/chart":
         setCrrState((prev) => ({
           ...(prev ?? {}),
           background: "head-eye rect-03",
           showHome: true,
-          title: "CHART"
-        }))
+          title: "CHART",
+        }));
         break;
       default:
         break;
     }
-  }
+  };
+
   useEffect(() => {
-    init(location?.pathname ?? "")
-  }, [location])
+    init(location?.pathname ?? "");
+  }, [location]);
+
   return (
-    <HtmlContainer background={crrState?.background ?? ""} showHome={crrState?.showHome ?? false}>
+    <HtmlContainer
+      background={crrState?.background ?? ""}
+      showHome={crrState?.showHome ?? false}
+    >
       <Header />
       <Body>
         <Container maxWidth={maxWidth} className="pt-44 pb-36">
           <Outlet />
         </Container>
       </Body>
-      <Footer isDisplay={crrState?.showHome ?? false} title={crrState?.title ?? ""} />
+      <Footer
+        isDisplay={crrState?.showHome ?? false}
+        title={crrState?.title ?? ""}
+      />
     </HtmlContainer>
   );
-}
-export default Layout
+};
+
+export default Layout;

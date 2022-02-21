@@ -7,5 +7,5 @@ const Header: React.FC = ({ ...props }) => {
       <MainHeader />
     </React.Fragment>
   );
-}
-export default Header
+};
+export default Header;

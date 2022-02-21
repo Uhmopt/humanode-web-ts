@@ -18,6 +18,7 @@ const Routes: React.FC = () => {
     <Router>
       <Switch>
         <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="path" element={<Path />} />
           <Route path="path/detail" element={<PathDetail />} />

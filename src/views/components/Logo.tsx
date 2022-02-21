@@ -13,7 +13,7 @@ interface Props {
 
 const Logo: React.FC<Props> = ({ variant = "image", color = "primary" }) => {
   return (
-    <CustomLink to="/home">
+    <CustomLink to="/">
       {variant === "image" ? (
         <CustomImage
           src={color === "white" ? imageWhite : image}
